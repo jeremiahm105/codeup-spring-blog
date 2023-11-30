@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="partials/head.html :: head('Landing Page')">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+
+</head>
+<body>
+
+<nav th:replace="partials/navbar :: navbar"></nav>
+<h1>This is the home page</h1>
+
+<p>Hello</p>
+<div class="container fixed-bottom">
+    <footer th:replace="partials/footer :: footer"></footer>
+    <th:block th:replace="partials/scripts :: scripts" />
+</div>
+</body>
+</html>

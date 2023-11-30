@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dice Roll Result</title>
+</head>
+<body>
+<h1>Dice Roll Result</h1>
+
+<!--Shows the value of user guess and the random number and provides an if/else statement to verify if numbers match-->
+<p>Your guess: <span th:text="${guess}"></span></p>
+<p>Actual dice roll: <span th:text="${diceRoll}"></span></p>
+<p th:if="${isCorrect}">Congrats your guess was correct!</p>
+<p th:unless="${isCorrect}">Sorry your guess was incorrect, Please try again!</p>
+</body>
+</html>
